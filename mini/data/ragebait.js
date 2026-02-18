@@ -140,7 +140,7 @@ SPA.data.sentences = [
 
 SPA.data.wordlists = {
 	"adj": "-adj,-adj,+adj",
-	"-adj": "bad,awful,terrible,boring,lame,goofy,dumb,stupid,cringe,discombobulated,buns,L,disgusting,chopped,cooked,goofy ahh",
+	"-adj": "bad,awful,terrible,boring,lame,goofy,dumb,stupid,cringe,discombobulated,buns,L,disgusting,chopped,cooked,AAAAAAHH,goofy ahh,R74n",
 	"+adj": "lovely,awesome,beautiful,cool,amazing,W,great",
 	"opinion": "+love,-hate",
 	"subject": "stream,streamer,game",
@@ -162,6 +162,7 @@ SPA.data.wordlists = {
 SPA.data.multipliers = {
 	"so": 1,
 	"really": 1,
+	"evilly": 6942,
 	"extremely": 2,
 	"super": 1.5,
 	"very": 1,
@@ -683,13 +684,14 @@ function pickUsername() {
 		"TanDRM",
 		"Yahiarat",
 		"Ainsey",
+		"EVILGUY",
 		"BigAnt"
 	])
 }
 function pickTitle() {
 	let span = document.getElementById("mainTitle");
 	span.innerText = choose([
-		"HUGE STREAM GETTING DUBS",
+		"EVIL STREAM GETTING DUBS",
 		"short early stream today",
 		"SUBATHON DAY 72834867",
 		"just chatting with chat",
@@ -706,6 +708,7 @@ function pickGame() {
 		["What Are The Odds?", "https://r74n.com/mini/odds"],
 		["GenTown", "https://r74n.com/gentown/"],
 		["Every Ant on Earth", "https://r74n.com/ants/"],
+		["A very normal youtube video", "https://youtu.be/dQw4w9WgXcQ"],
 		["Mix-Up!", "https://r74n.com/mix/"]
 	])
 	span.innerText = game[0];
